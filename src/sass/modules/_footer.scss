@@ -1,0 +1,47 @@
+footer {
+	border-top: 1px solid $border-color;
+
+	a {
+		position: relative;
+	}
+
+	.flex {
+		flex: 12;
+	}
+
+	.item {
+		line-height: normal;
+		flex: 4;
+	}
+
+	.social {
+		a:first-child {
+			margin-left: -$s-xs;
+		}
+
+		a {
+			line-height: normal;
+		}
+	}
+
+	.copyright {
+		font-size: $font-size-h6;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		a {
+			&:hover,
+			&:active,
+			&:focus {
+				color: $text-color;
+			}
+		}
+	}
+
+	#go-to-top {
+		line-height: normal;
+		margin-right: -$s-sm;
+		padding: $s-sm;
+	}
+}

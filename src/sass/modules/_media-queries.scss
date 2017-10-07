@@ -1,0 +1,39 @@
+@media (max-width: $screen-xs-max) {
+	#header {
+		max-height: $header-max-height-mobile;
+		height: $header-max-height-mobile;
+	}
+
+	footer {
+		.flex {
+			flex-direction: column-reverse;
+		}
+
+		.item {
+			text-align: center;
+		}
+
+		#go-to-top {
+			margin: 0;
+		}
+	}
+
+	.card {
+		.overlay {
+			visibility: visible;
+			opacity: 1;
+			background: transparentize($brand-primary, 1);
+			background: linear-gradient(to bottom, transparentize($brand-primary, 1) 0%, transparentize($brand-primary, 0) 100%);
+		}
+
+		.caption {
+			padding: $s-md;
+
+			.heading,
+			.icon {
+				transform: translate(0, 0);
+				opacity: 1;
+			}
+		}
+	}
+}

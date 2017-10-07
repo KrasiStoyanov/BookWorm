@@ -1,0 +1,68 @@
+// TYPOGRAPHY
+$font-family-base: 'Roboto', sans-serif;
+$font-size-base: 14px;
+
+$font-size-h1: 22px;
+$font-size-h2: 20px;
+$font-size-h3: 18px;
+$font-size-h4: 16px;
+$font-size-h5: 12px;
+$font-size-h6: 10px;
+$font-size-small: $font-size-h6;
+
+$headings-font-family: 'Comfortaa', cursive;
+$headings-font-weight: 700;
+$headings-line-height: 1.5;
+
+$line-height-base: 1.75;
+
+// BORDER RADIUS
+$border-radius-base: 20px;
+$border-radius-large: $border-radius-base;
+$border-radius-small: $border-radius-base;
+
+// SPACING
+$s-xs: 10px;
+$s-sm: 20px;
+$s-md: 30px;
+$s-lg: 40px;
+$s-xl: 50px;
+$s-xxl: 60px;
+$s-xxxl: 70px;
+
+$navbar-height: 70px;
+
+// CONTAINER
+$container-gutter-xs: 25px;
+
+// MODAL
+$modal-title-padding: 0;
+$modal-lg: 100%;
+
+// CLOSE
+$close-font-weight: normal;
+$close-color: $white-color;
+$close-text-shadow: none;
+
+// HEADER
+$header-max-height: 350px;
+$header-max-height-mobile: 250px;
+
+// BUTTONS
+$btn-default-color: $text-color;
+$btn-default-bg: transparent;
+$btn-default-border: $border-color;
+
+$btn-lg-min-width: 165px;
+$btn-lg-font-size: $font-size-h5;
+
+// FORMS
+$input-color: $text-color;
+$input-border: $border-color;
+$input-border-focus: $brand-primary;
+$input-color-placeholder: $text-color;
+$input-height-medium: 40px;
+
+// IMAGE VIEW
+$card-width-small: 50px;
+$card-height-small: 50px;

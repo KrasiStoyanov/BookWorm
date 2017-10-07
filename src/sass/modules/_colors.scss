@@ -1,0 +1,24 @@
+$white-color: #fff;
+$steel-color: #273444;
+$slate-color: #3C4858;
+$silver-color: #8492A6;
+$extra-dark-snow: #E5E9F2;
+
+$border-color: $extra-dark-snow;
+
+$brand-color: #4C54FD;
+$brand-primary: $brand-color;
+
+$overlay-color: transparentize($brand-primary, .1);
+$modal-backdrop-bg: $brand-primary;
+$modal-backdrop-opacity: .95;
+$modal-content-bg: transparent;
+
+$text-color: $silver-color;
+$headings-color: $steel-color;
+$heading-inverted-color: $white-color;
+
+$link-color: $slate-color;
+$link-text-color: $text-color;
+$link-brand-color: $brand-primary;
+$link-inverted-color: $white-color;

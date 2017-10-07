@@ -1,0 +1,590 @@
+// SPACINGS
+
+// ==============================================
+// MARGINS
+// ==============================================
+.m-1 {
+	@include spacing($s-xs, 'margin');
+}
+
+.m-2 {
+	@include spacing($s-sm, 'margin');
+}
+
+.m-3 {
+	@include spacing($s-md, 'margin');
+}
+
+.m-4 {
+	@include spacing($s-lg, 'margin');
+}
+
+.m-5 {
+	@include spacing($s-xl, 'margin');
+}
+
+.m-6 {
+	@include spacing($s-xxl, 'margin');
+}
+
+.m-7 {
+	@include spacing($s-xxxl, 'margin');
+}
+
+// TOP
+.m-t-1 {
+	@include spacing($s-xs, 'margin', 'top');
+}
+
+.m-t-2 {
+	@include spacing($s-sm, 'margin', 'top');
+}
+
+.m-t-3 {
+	@include spacing($s-md, 'margin', 'top');
+}
+
+.m-t-4 {
+	@include spacing($s-lg, 'margin', 'top');
+}
+
+.m-t-5 {
+	@include spacing($s-xl, 'margin', 'top');
+}
+
+.m-t-6 {
+	@include spacing($s-xxl, 'margin', 'top');
+}
+
+.m-t-7 {
+	@include spacing($s-xxxl, 'margin', 'top');
+}
+
+// RIGHT
+.m-r-1 {
+	@include spacing($s-xs, 'margin', 'right');
+}
+
+.m-r-2 {
+	@include spacing($s-sm, 'margin', 'right');
+}
+
+.m-r-3 {
+	@include spacing($s-md, 'margin', 'right');
+}
+
+.m-r-4 {
+	@include spacing($s-lg, 'margin', 'right');
+}
+
+.m-r-5 {
+	@include spacing($s-xl, 'margin', 'right');
+}
+
+.m-r-6 {
+	@include spacing($s-xxl, 'margin', 'right');
+}
+
+.m-r-7 {
+	@include spacing($s-xxxl, 'margin', 'right');
+}
+
+// BOTTOM
+.m-b-1 {
+	@include spacing($s-xs, 'margin', 'bottom');
+}
+
+.m-b-2 {
+	@include spacing($s-sm, 'margin', 'bottom');
+}
+
+.m-b-3 {
+	@include spacing($s-md, 'margin', 'bottom');
+}
+
+.m-b-4 {
+	@include spacing($s-lg, 'margin', 'bottom');
+}
+
+.m-b-5 {
+	@include spacing($s-xl, 'margin', 'bottom');
+}
+
+.m-b-6 {
+	@include spacing($s-xxl, 'margin', 'bottom');
+}
+
+.m-b-7 {
+	@include spacing($s-xxxl, 'margin', 'bottom');
+}
+
+// LEFT
+.m-l-1 {
+	@include spacing($s-xs, 'margin', 'left');
+}
+
+.m-l-2 {
+	@include spacing($s-sm, 'margin', 'left');
+}
+
+.m-l-3 {
+	@include spacing($s-md, 'margin', 'left');
+}
+
+.m-l-4 {
+	@include spacing($s-lg, 'margin', 'left');
+}
+
+.m-l-5 {
+	@include spacing($s-xl, 'margin', 'left');
+}
+
+.m-l-6 {
+	@include spacing($s-xxl, 'margin', 'left');
+}
+
+.m-l-7 {
+	@include spacing($s-xxxl, 'margin', 'left');
+}
+
+// ==============================================
+// PADDINGS
+// ==============================================
+.p-1 {
+	@include spacing($s-xs, 'padding');
+}
+
+.p-2 {
+	@include spacing($s-sm, 'padding');
+}
+
+.p-3 {
+	@include spacing($s-md, 'padding');
+}
+
+.p-4 {
+	@include spacing($s-lg, 'padding');
+}
+
+.p-5 {
+	@include spacing($s-xl, 'padding');
+}
+
+.p-6 {
+	@include spacing($s-xxl, 'padding');
+}
+
+.p-7 {
+	@include spacing($s-xxxl, 'padding');
+}
+
+// TOP
+.p-t-1 {
+	@include spacing($s-xs, 'padding', 'top');
+}
+
+.p-t-2 {
+	@include spacing($s-sm, 'padding', 'top');
+}
+
+.p-t-3 {
+	@include spacing($s-md, 'padding', 'top');
+}
+
+.p-t-4 {
+	@include spacing($s-lg, 'padding', 'top');
+}
+
+.p-t-5 {
+	@include spacing($s-xl, 'padding', 'top');
+}
+
+.p-t-6 {
+	@include spacing($s-xxl, 'padding', 'top');
+}
+
+.p-t-7 {
+	@include spacing($s-xxxl, 'padding', 'top');
+}
+
+// RIGHT
+.p-r-1 {
+	@include spacing($s-xs, 'padding', 'right');
+}
+
+.p-r-2 {
+	@include spacing($s-sm, 'padding', 'right');
+}
+
+.p-r-3 {
+	@include spacing($s-md, 'padding', 'right');
+}
+
+.p-r-4 {
+	@include spacing($s-lg, 'padding', 'right');
+}
+
+.p-r-5 {
+	@include spacing($s-xl, 'padding', 'right');
+}
+
+.p-r-6 {
+	@include spacing($s-xxl, 'padding', 'right');
+}
+
+.p-r-7 {
+	@include spacing($s-xxxl, 'padding', 'right');
+}
+
+// BOTTOM
+.p-b-1 {
+	@include spacing($s-xs, 'padding', 'bottom');
+}
+
+.p-b-2 {
+	@include spacing($s-sm, 'padding', 'bottom');
+}
+
+.p-b-3 {
+	@include spacing($s-md, 'padding', 'bottom');
+}
+
+.p-b-4 {
+	@include spacing($s-lg, 'padding', 'bottom');
+}
+
+.p-b-5 {
+	@include spacing($s-xl, 'padding', 'bottom');
+}
+
+.p-b-6 {
+	@include spacing($s-xxl, 'padding', 'bottom');
+}
+
+.p-b-7 {
+	@include spacing($s-xxxl, 'padding', 'bottom');
+}
+
+// LEFT
+.p-l-1 {
+	@include spacing($s-xs, 'padding', 'left');
+}
+
+.p-l-2 {
+	@include spacing($s-sm, 'padding', 'left');
+}
+
+.p-l-3 {
+	@include spacing($s-md, 'padding', 'left');
+}
+
+.p-l-4 {
+	@include spacing($s-lg, 'padding', 'left');
+}
+
+.p-l-5 {
+	@include spacing($s-xl, 'padding', 'left');
+}
+
+.p-l-6 {
+	@include spacing($s-xxl, 'padding', 'left');
+}
+
+.p-l-7 {
+	@include spacing($s-xxxl, 'padding', 'left');
+}
+
+// ==============================================
+// QUERIES
+// ==============================================
+@media (max-width: $screen-xs-max) {
+	// MARGIN
+	.xs-m-1 {
+		@include spacing($s-xs, 'margin');
+	}
+
+	.xs-m-2 {
+		@include spacing($s-sm, 'margin');
+	}
+
+	.xs-m-3 {
+		@include spacing($s-md, 'margin');
+	}
+
+	.xs-m-4 {
+		@include spacing($s-lg, 'margin');
+	}
+
+	.xs-m-5 {
+		@include spacing($s-xl, 'margin');
+	}
+
+	.xs-m-6 {
+		@include spacing($s-xxl, 'margin');
+	}
+
+	.xs-m-7 {
+		@include spacing($s-xxxl, 'margin');
+	}
+
+	// TOP
+	.xs-m-t-1 {
+		@include spacing($s-xs, 'margin', 'top');
+	}
+
+	.xs-m-t-2 {
+		@include spacing($s-sm, 'margin', 'top');
+	}
+
+	.xs-m-t-3 {
+		@include spacing($s-md, 'margin', 'top');
+	}
+
+	.xs-m-t-4 {
+		@include spacing($s-lg, 'margin', 'top');
+	}
+
+	.xs-m-t-5 {
+		@include spacing($s-xl, 'margin', 'top');
+	}
+
+	.xs-m-t-6 {
+		@include spacing($s-xxl, 'margin', 'top');
+	}
+
+	.xs-m-t-7 {
+		@include spacing($s-xxxl, 'margin', 'top');
+	}
+
+	// RIGHT
+	.xs-m-r-1 {
+		@include spacing($s-xs, 'margin', 'right');
+	}
+
+	.xs-m-r-2 {
+		@include spacing($s-sm, 'margin', 'right');
+	}
+
+	.xs-m-r-3 {
+		@include spacing($s-md, 'margin', 'right');
+	}
+
+	.xs-m-r-4 {
+		@include spacing($s-lg, 'margin', 'right');
+	}
+
+	.xs-m-r-5 {
+		@include spacing($s-xl, 'margin', 'right');
+	}
+
+	.xs-m-r-6 {
+		@include spacing($s-xxl, 'margin', 'right');
+	}
+
+	.xs-m-r-7 {
+		@include spacing($s-xxxl, 'margin', 'right');
+	}
+
+	// BOTTOM
+	.xs-m-b-1 {
+		@include spacing($s-xs, 'margin', 'bottom');
+	}
+
+	.xs-m-b-2 {
+		@include spacing($s-sm, 'margin', 'bottom');
+	}
+
+	.xs-m-b-3 {
+		@include spacing($s-md, 'margin', 'bottom');
+	}
+
+	.xs-m-b-4 {
+		@include spacing($s-lg, 'margin', 'bottom');
+	}
+
+	.xs-m-b-5 {
+		@include spacing($s-xl, 'margin', 'bottom');
+	}
+
+	.xs-m-b-6 {
+		@include spacing($s-xxl, 'margin', 'bottom');
+	}
+
+	.xs-m-b-7 {
+		@include spacing($s-xxxl, 'margin', 'bottom');
+	}
+
+	// LEFT
+	.xs-m-l-1 {
+		@include spacing($s-xs, 'margin', 'left');
+	}
+
+	.xs-m-l-2 {
+		@include spacing($s-sm, 'margin', 'left');
+	}
+
+	.xs-m-l-3 {
+		@include spacing($s-md, 'margin', 'left');
+	}
+
+	.xs-m-l-4 {
+		@include spacing($s-lg, 'margin', 'left');
+	}
+
+	.xs-m-l-5 {
+		@include spacing($s-xl, 'margin', 'left');
+	}
+
+	.xs-m-l-6 {
+		@include spacing($s-xxl, 'margin', 'left');
+	}
+
+	.xs-m-l-7 {
+		@include spacing($s-xxxl, 'margin', 'left');
+	}
+	
+	// PADDING
+	.xs-p-1 {
+		@include spacing($s-xs, 'padding');
+	}
+
+	.xs-p-2 {
+		@include spacing($s-sm, 'padding');
+	}
+
+	.xs-p-3 {
+		@include spacing($s-md, 'padding');
+	}
+
+	.xs-p-4 {
+		@include spacing($s-lg, 'padding');
+	}
+
+	.xs-p-5 {
+		@include spacing($s-xl, 'padding');
+	}
+
+	.xs-p-6 {
+		@include spacing($s-xxl, 'padding');
+	}
+
+	.xs-p-7 {
+		@include spacing($s-xxxl, 'padding');
+	}
+
+	// TOP
+	.xs-p-t-1 {
+		@include spacing($s-xs, 'padding', 'top');
+	}
+
+	.xs-p-t-2 {
+		@include spacing($s-sm, 'padding', 'top');
+	}
+
+	.xs-p-t-3 {
+		@include spacing($s-md, 'padding', 'top');
+	}
+
+	.xs-p-t-4 {
+		@include spacing($s-lg, 'padding', 'top');
+	}
+
+	.xs-p-t-5 {
+		@include spacing($s-xl, 'padding', 'top');
+	}
+
+	.xs-p-t-6 {
+		@include spacing($s-xxl, 'padding', 'top');
+	}
+
+	.xs-p-t-7 {
+		@include spacing($s-xxxl, 'padding', 'top');
+	}
+
+	// RIGHT
+	.xs-p-r-1 {
+		@include spacing($s-xs, 'padding', 'right');
+	}
+
+	.xs-p-r-2 {
+		@include spacing($s-sm, 'padding', 'right');
+	}
+
+	.xs-p-r-3 {
+		@include spacing($s-md, 'padding', 'right');
+	}
+
+	.xs-p-r-4 {
+		@include spacing($s-lg, 'padding', 'right');
+	}
+
+	.xs-p-r-5 {
+		@include spacing($s-xl, 'padding', 'right');
+	}
+
+	.xs-p-r-6 {
+		@include spacing($s-xxl, 'padding', 'right');
+	}
+
+	.xs-p-r-7 {
+		@include spacing($s-xxxl, 'padding', 'right');
+	}
+
+	// BOTTOM
+	.xs-p-b-1 {
+		@include spacing($s-xs, 'padding', 'bottom');
+	}
+
+	.xs-p-b-2 {
+		@include spacing($s-sm, 'padding', 'bottom');
+	}
+
+	.xs-p-b-3 {
+		@include spacing($s-md, 'padding', 'bottom');
+	}
+
+	.xs-p-b-4 {
+		@include spacing($s-lg, 'padding', 'bottom');
+	}
+
+	.xs-p-b-5 {
+		@include spacing($s-xl, 'padding', 'bottom');
+	}
+
+	.xs-p-b-6 {
+		@include spacing($s-xxl, 'padding', 'bottom');
+	}
+
+	.xs-p-b-7 {
+		@include spacing($s-xxxl, 'padding', 'bottom');
+	}
+
+	// LEFT
+	.xs-p-l-1 {
+		@include spacing($s-xs, 'padding', 'left');
+	}
+
+	.xs-p-l-2 {
+		@include spacing($s-sm, 'padding', 'left');
+	}
+
+	.xs-p-l-3 {
+		@include spacing($s-md, 'padding', 'left');
+	}
+
+	.xs-p-l-4 {
+		@include spacing($s-lg, 'padding', 'left');
+	}
+
+	.xs-p-l-5 {
+		@include spacing($s-xl, 'padding', 'left');
+	}
+
+	.xs-p-l-6 {
+		@include spacing($s-xxl, 'padding', 'left');
+	}
+
+	.xs-p-l-7 {
+		@include spacing($s-xxxl, 'padding', 'left');
+	}
+}

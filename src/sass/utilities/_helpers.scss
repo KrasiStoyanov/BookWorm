@@ -1,0 +1,34 @@
+.brand-color {
+	color: $brand-primary;
+}
+
+.white-color {
+	color: $white-color;
+}
+
+.text-color {
+	color: $text-color;
+}
+
+.inline-line-text {
+	[class*="icon-"] {
+		margin-right: $s-xs / 2;
+	}
+}
+
+.height-full {
+	height: 100%;
+}
+
+// POSITIONS
+.relative {
+	position: relative;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.z-index-1 {
+	z-index: 1;
+}

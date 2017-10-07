@@ -1,0 +1,72 @@
+.card {
+	height: 0;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+	transition: all .4s ease-in-out;
+
+	a {
+		cursor: pointer;
+
+		&:hover,
+		&:active,
+		&:focus {
+			color: transparentize($white-color, .4);
+		}
+	}
+
+	.overlay {
+		visibility: hidden;
+		opacity: 0;
+	}
+
+	.caption {
+		align-selft: flex-end;
+		display: flex;
+		flex-direction: row;
+		padding: $s-sm;
+
+		.heading {
+			flex: 1;
+			padding-right: $s-xs;
+			transform: translateX(-15%);
+			opacity: 0;
+			transition: all .3s ease-in-out;
+
+			a {
+				display: block;
+			}
+		}
+
+		.icon {
+			align-self: center;
+			transform: translateX(150%);
+			opacity: 0;
+			transition: all .3s ease-in-out;
+		}
+	}
+
+	&:hover,
+	&:active,
+	&:focus,
+	&.active,
+	&.focus {
+		@include z-depth-3();
+
+		.overlay {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		.caption {
+			.heading,
+			.icon {
+				transform: translateX(0);
+				opacity: 1;
+			}
+		}
+	}
+}
