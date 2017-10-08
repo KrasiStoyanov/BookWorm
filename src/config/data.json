@@ -4,7 +4,7 @@
         "id": 0,
         "title": "To you",
         "description": "From the bottom of my heart, I write thee the true feelings one could ever have for you.",
-        "image-url": "http://www.wallpapersin4k.org/wp-content/uploads/2017/04/Road-Nature-Wallpaper-17.jpg",
+        "image-url": "images/first-work-cover.jpg",
         "author": "Krasi Stoyanov",
         "url": "./first-work",
         "text": [
@@ -78,7 +78,7 @@
         "id": 1,
         "title": "Слабост",
         "description": "Посветено на една всеотдайна и изкряща звезда някъде из небето.",
-        "image-url": "http://thebark.com/sites/default/files/styles/full/public/content/article/full/startowndogrescue.jpeg",
+        "image-url": "images/second-work-cover.jpg",
         "author": "Krasi Stoyanov",
         "url": "./second-work",
         "text": [
@@ -225,7 +225,7 @@
         "id": 2,
         "title": "Изкуството на самотата",
         "description": "Отново това прекалено познато усещане, усещане на облекчение и радост, щастие и веселие.",
-        "image-url": "http://thebark.com/sites/default/files/styles/full/public/content/article/full/startowndogrescue.jpeg",
+        "image-url": "images/third-work-cover.jpg",
         "author": "Krasi Stoyanov",
         "url": "./third-work",
         "text": [
@@ -250,7 +250,7 @@
         "id": 3,
         "title": "От еволюция до пълно унищожение",
         "description": "Намираме се на континента Пангеа. Периодът е Триас.",
-        "image-url": "http://thebark.com/sites/default/files/styles/full/public/content/article/full/startowndogrescue.jpeg",
+        "image-url": "images/fourth-work-cover.jpg",
         "author": "Krasi Stoyanov",
         "url": "./fourth-work",
         "text": [
@@ -298,7 +298,7 @@
         "id": 4,
         "title": "Болезнена смърт",
         "description": "Още една перфектно сцепена дъска се озова в почти изстиналата камина, разположена в хола ми, в къщата ми край СтоунБридж.",
-        "image-url": "http://thebark.com/sites/default/files/styles/full/public/content/article/full/startowndogrescue.jpeg",
+        "image-url": "images/fifth-work-cover.jpg",
         "author": "Krasi Stoyanov",
         "url": "./fifth-work",
         "text": [

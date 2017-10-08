@@ -1,47 +1,25 @@
 footer {
 	border-top: 1px solid $border-color;
-
-	a {
-		position: relative;
-	}
-
-	.flex {
-		flex: 12;
-	}
-
-	.item {
-		line-height: normal;
-		flex: 4;
-	}
-
-	.social {
-		a:first-child {
-			margin-left: -$s-xs;
-		}
-
-		a {
-			line-height: normal;
-		}
-	}
+	background-color: $background-color;
 
 	.copyright {
 		font-size: $font-size-h6;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
+		color: $extra-dark-snow;
+		text-align: center;
 
 		a {
+			color: $extra-dark-snow;
+
 			&:hover,
 			&:active,
 			&:focus {
-				color: $text-color;
+				color: transparentize($red-color, .3);
 			}
 		}
-	}
 
-	#go-to-top {
-		line-height: normal;
-		margin-right: -$s-sm;
-		padding: $s-sm;
+		i::before {
+			font-size: 10px;
+			color: $red-color;
+		}
 	}
 }
