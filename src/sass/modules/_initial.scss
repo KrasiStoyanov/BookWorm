@@ -1,6 +1,7 @@
 html {
     min-height: 100%;
-    font-size: 62.5%;
+    font-size: $font-size-base;
+    font-family: 'Karla';
 }
 
 body {
@@ -26,19 +27,18 @@ ul {
 a {
 	outline: 0;
 	cursor: pointer;
+	text-decoration: none;
 	transition: color .3s ease-in-out;
 	
 	&:hover,
 	&:active,
 	&:focus,
+	&:visited,
 	&.active,
 	&.focus {
 		outline: 0;
 		text-decoration: none;
-
-		.indicator {
-			width: 100%;
-		}
+		color: initial;
 	}
 }
 
@@ -56,17 +56,5 @@ button {
 
 #main-content {
 	flex-grow: 1;
-}
-
-.indicator {
-	height: 1px;
-	width: 0;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	margin: auto;
-	display: inline-block;
-	background-color: $brand-primary;
-	transition: width .3s ease-in-out;
+	background-color: $background-color;
 }

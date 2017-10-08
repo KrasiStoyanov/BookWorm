@@ -1,10 +1,12 @@
 $white-color: #fff;
-$steel-color: #273444;
-$slate-color: #3C4858;
-$silver-color: #8492A6;
-$extra-dark-snow: #E5E9F2;
+$green-color: #58c9b9;
+$red-color: #ff7473;
+$silver-color: #40444f;
+$extra-dark-snow: #9a9ea8;
 
-$border-color: $extra-dark-snow;
+$background-color: #f9f9fb;
+
+$border-color: #e9e9e9;
 
 $brand-color: #4C54FD;
 $brand-primary: $brand-color;
@@ -14,11 +16,11 @@ $modal-backdrop-bg: $brand-primary;
 $modal-backdrop-opacity: .95;
 $modal-content-bg: transparent;
 
-$text-color: $silver-color;
-$headings-color: $steel-color;
+$text-color: $extra-dark-snow;
+$heading-color: $silver-color;
 $heading-inverted-color: $white-color;
 
-$link-color: $slate-color;
+$link-color: $extra-dark-snow;
 $link-text-color: $text-color;
 $link-brand-color: $brand-primary;
 $link-inverted-color: $white-color;

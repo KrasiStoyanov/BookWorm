@@ -43,7 +43,6 @@
                 })
             )
             .pipe(htmlmin({
-                collapseWhitespace: true
             }))
             .pipe(rename({
                 extname: '.html'

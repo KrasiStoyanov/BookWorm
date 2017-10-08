@@ -1,0 +1,61 @@
+#navigation-bar {
+  min-height: $navbar-height;
+  padding: $s-md 0;
+  border-bottom: 1px solid $border-color;
+
+  & > .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-header {
+    a {
+      display: inline-block;
+      height: 40px;
+
+      img {
+        display: block;
+        height: 100%;
+      }
+    }
+  }
+
+  .navbar-nav {
+    flex: 1 auto;
+    list-style: none;
+    text-align: right;
+
+    @media (min-width: $screen-lg) {
+      margin-right: -($grid-gutter-width / 2);
+    }
+
+    li {
+      display: inline-flex;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      transition: all .2s ease-in-out;
+
+      a {
+        font-size: $font-size-h4;
+        position: relative;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        padding: $s-xs / 2;
+        display: block;
+        color: $silver-color;
+      }
+
+      &:hover,
+      &:active,
+      &:focus,
+      &.active,
+      &.focus {
+        background-color: $background-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.input-group {
+	position: relative;
+	display: flex;
+
+	&.input-group-default {
+		.form-control {
+			background-color: transparentize(#000, .97);
+			box-shadow: none;
+			border: 0;
+			outline: 0;
+			color: transparentize($extra-dark-snow, .3);
+
+			&::placeholder {
+				color: transparentize($extra-dark-snow, .3);
+			}
+		}
+	}
+
+	&.input-group-md {
+		height: $s-md;
+	}
+}
