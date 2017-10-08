@@ -15,10 +15,48 @@
 		}
 	}
 
+	&.btn-black {
+		background-color: transparentize(#000, .4);
+		color: $white-color;
+	}
+
+	&.btn-white {
+		background-color: $white-color;
+		color: $extra-dark-snow;
+	}
+
+	&.btn-circle {
+		border-radius: 50%;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	&.btn-round {
+		border-radius: 40px;
+	}
+
+	// Btn sizes
+	&.btn-sm {
+		padding: 0;
+		font-size: $font-size-h6;
+		height: $s-sm + 5px;
+		line-height: $s-sm + 5px;
+
+		&.btn-circle {
+			font-size: 10px;
+			width: $s-sm + 5px;
+		}
+	}
+
 	&.btn-md {
 		padding: 0 $s-xs;
 		font-size: $font-size-h5;
 		height: $s-md;
 		line-height: $s-md;
+
+		&.btn-circle {
+			width: $s-md;
+		}
 	}
 }

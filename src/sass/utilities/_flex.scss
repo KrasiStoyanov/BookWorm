@@ -15,6 +15,10 @@
 	flex-direction: column;
 }
 
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
 // JUSTIFY CONTENT
 .justify-content-start {
 	justify-content: flex-start;
@@ -77,6 +81,23 @@
 
 .align-self-stretch {
 	align-self: stretch;
+}
+
+// JUSTIFY SELF
+.justify-self-start {
+	justify-self: flex-start;
+}
+
+.justify-self-end {
+	justify-self: flex-end;
+}
+
+.justify-self-center {
+	justify-self: center;
+}
+
+.justify-self-stretch {
+	justify-self: stretch;
 }
 
 // GROW

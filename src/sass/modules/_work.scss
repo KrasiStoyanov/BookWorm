@@ -1,0 +1,89 @@
+.work {
+	.cover-image {
+		background-size: cover;
+		background-position: center center;
+		height: 400px;
+		position: relative;
+
+		.overlay {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 1;
+			background-color: transparentize(#000, .7);
+		}
+
+		> div:not(.overlay) {
+			z-index: 1;
+		}
+
+		.social {
+
+		}
+
+		.author {
+			color: $white-color;
+
+			.label {
+				opacity: .7;
+			}
+
+			span:last-child {
+				font-weight: bold;
+			}
+		}
+
+		.like {
+			position: relative;
+			bottom: -15px;
+			display: flex;
+			justify-content: center;
+
+			.btn {
+				min-width: 80px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				transition: all .2s ease-in-out;
+				@include z-depth-1;
+
+				&:hover,
+				&:active,
+				&:focus,
+				&.active,
+				&.focus {
+					@include z-depth-2;
+
+					i {
+						&::before {
+							content: "\e907";
+							color: $red-color;
+							transition: all .2s ease-in-out;
+						}
+					}
+				}
+
+				span {
+					margin-left: 5px;
+				}
+			}
+		}
+	}
+
+	.content {
+		p {
+			padding: 0 $s-sm + 5px;
+			text-align: center;
+			font-size: $font-size-h3;
+			color: $extra-dark-snow;
+
+			@media (min-width: $screen-lg-min) {
+				max-width: 500px;
+				margin: auto;
+				display: block;
+			}
+		}
+	}
+}

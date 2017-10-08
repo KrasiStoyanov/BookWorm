@@ -1,55 +1,57 @@
 {{#extend "layout"}}
     {{#content "body"}}
-    	<div class="p-t-5 p-b-5">
-    		<div class="flex flex-row">
-    			<div>
-    				<h1 class="heading m-b-2">Library</h1>
-    				<h6 class="upcase">All works published by our users</h6>
-    			</div>
-    			<div class="flex align-items-center flex-grow justify-content-end">
-    				<button class="btn btn-md btn-default">
-    					<i class="icon-align-left"></i>
-    					<span class="m-l-1">Filter by</span>
-    				</button>
-    				<div class="input-group input-group-md input-group-default m-l-1">
-    					<input type="text" class="form-control p-l-1 p-r-1" placeholder="Search">
-						<button class="btn btn-md btn-default"><i class="icon-search"></i></button>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
-    	<div id="list-of-works">
-    		<div class="flex row">
-	    		{{#each data.works}}
-					<div class="col-xs-12 col-md-4 m-b-3">
-						<div class="card flex">
-							<div class="cover-image">
-								<img src="{{image-url}}" alt="Cover Image">
-							</div>
-							<div class="content flex flex-column">
-								<div class="p-t-2 p-r-2 p-b-2 p-l-2 flex-grow">
-									<a href="#"><h3 class="heading m-b-2">{{title}}</h3></a>
-									<h6 class="description">{{description}}</h6>
+    	<div class="container">
+	    	<div class="p-t-5 p-b-5">
+	    		<div class="flex flex-row">
+	    			<div>
+	    				<h1 class="heading m-b-2">Library</h1>
+	    				<h6 class="upcase">All works published by our users</h6>
+	    			</div>
+	    			<div class="flex align-items-center flex-grow justify-content-end">
+	    				<button class="btn btn-md btn-default">
+	    					<i class="icon-align-left"></i>
+	    					<span class="m-l-1">Filter by</span>
+	    				</button>
+	    				<div class="input-group input-group-md input-group-default m-l-1">
+	    					<input type="text" class="form-control p-l-1 p-r-1" placeholder="Search">
+							<button class="btn btn-md btn-default"><i class="icon-search"></i></button>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    	<div id="list-of-works">
+	    		<div class="flex row">
+		    		{{#each data.works}}
+						<div class="col-xs-12 col-md-4 m-b-3">
+							<div class="card flex">
+								<div class="cover-image">
+									<img src="{{image-url}}" alt="Cover Image">
 								</div>
-								<div class="divider"></div>
-								<div class="flex align-items-center p-t-2 p-r-2 p-b-2 p-l-2">
-									<div class="flex-grow">
-										<a href="#" class="like">
-											<h6>
-												<i class="icon-like-o"></i>
-												<span>{{likes}}</span>
-											</h6>
+								<div class="content flex flex-column">
+									<div class="p-t-2 p-r-2 p-b-2 p-l-2 flex-grow">
+										<a href="{{url}}.html"><h3 class="heading m-b-2">{{title}}</h3></a>
+										<h6 class="description">{{description}}</h6>
+									</div>
+									<div class="divider"></div>
+									<div class="flex align-items-center p-t-2 p-r-2 p-b-2 p-l-2">
+										<div class="flex-grow">
+											<a href="#" class="like">
+												<h6>
+													<i class="icon-like-o"></i>
+													<span>{{likes}}</span>
+												</h6>
+											</a>
+										</div>
+										<a href="{{url}}.html" class="link flex align-items-center">
+											<h5 class="m-r-1">Read More</h5>
+											<i class="icon-arrow-right"></i>
 										</a>
 									</div>
-									<a href="/" class="link flex align-items-center">
-										<h5 class="m-r-1">Read More</h5>
-										<i class="icon-arrow-right"></i>
-									</a>
 								</div>
 							</div>
 						</div>
-					</div>
-	    		{{/each}}
+		    		{{/each}}
+	    		</div>
     		</div>
     	</div>
     {{/content}}

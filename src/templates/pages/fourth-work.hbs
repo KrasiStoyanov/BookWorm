@@ -1,0 +1,49 @@
+{{#extend "layout"}}
+    {{#content "body"}}
+    	<div class="work">
+	    	<div class="cover-image flex flex-column white-color" style="background-image: url('{{data.works.3.image-url}}');">
+	    		<div class="overlay"></div>
+	    		<div class="container p-t-5">
+		    		<div class="flex flex-wrap align-items-center">
+		    			<div class="justify-self-start flex-grow">
+			    			<span class="badge badge-line views">
+			    				<i class="icon-eye"></i>
+			    				<span>{{data.works.3.views}}</span>
+			    			</span>
+		    			</div>
+		    			<div class="social flex justify-content-end flex-grow">
+		    				<button class="btn btn-sm btn-circle btn-black">
+		    					<i class="icon-facebook"></i>
+		    				</button>
+		    				<button class="btn btn-sm btn-circle btn-black m-l-1">
+		    					<i class="icon-twitter"></i>
+		    				</button>
+		    				<button class="btn btn-sm btn-circle btn-black m-l-1">
+		    					<i class="icon-instagram"></i>
+		    				</button>
+		    			</div>
+		    		</div>
+	    		</div>
+	    		<div class="flex flex-column flex-grow align-items-center justify-content-center">
+	    			<h1 class="heading title white-color m-b-2">{{data.works.3.title}}</h1>
+	    			<h5 class="author"><span class="lael">By:</span> <span>{{data.works.3.author}}</span></h5>
+	    		</div>
+	    		<div class="like">
+	    			<button class="btn btn-md btn-round btn-white">
+	    				<i class="icon-like-o"></i>
+	    				<span>{{data.works.3.likes}}</span>
+	    			</button>
+	    		</div>
+	    	</div>
+	    	<div class="content p-t-6">
+	    		<div class="container">
+		    		<p>
+		    			{{#each data.works.3.text}}
+		    				{{{this}}}
+		    			{{/each}}
+			    	</p>
+	    		</div>
+	    	</div>
+    	</div>
+    {{/content}}
+{{/extend}}
