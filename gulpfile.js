@@ -21,7 +21,7 @@
     gulp.task('html', function() {
         return gulp.src('src/templates/pages/**/*.hbs')
             .pipe(hb()
-                .data('src/config/portfolio.json')
+                .data('src/config/data.json')
                 .partials('src/templates/partials/**/*.hbs')
                 .helpers(hbLayouts)
                 .helpers({

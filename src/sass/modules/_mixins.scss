@@ -1,48 +1,78 @@
 @mixin spacing($spacing, $type-of-spacing, $spacing-position: false) {
-	@if $type-of-spacing == 'margin' {
-		@if $spacing-position {
-			@if $spacing-position == 'top' {
-				margin-top: $spacing;
-			} @else if $spacing-position == 'right' {
-				margin-right: $spacing;
-			} @else if $spacing-position == 'bottom' {
-				margin-bottom: $spacing;
-			} @else if $spacing-position == 'left' {
-				margin-left: $spacing;
-			}
-		} @else {
-			margin: $spacing;
-		}
-	} @else if $type-of-spacing == 'padding' {
-		@if $spacing-position {
-			@if $spacing-position == 'top' {
-				padding-top: $spacing;
-			} @else if $spacing-position == 'right' {
-				padding-right: $spacing;
-			} @else if $spacing-position == 'bottom' {
-				padding-bottom: $spacing;
-			} @else if $spacing-position == 'left' {
-				padding-left: $spacing;
-			}
-		} @else {
-			padding: $spacing;
-		}
-	}
+    @if $type-of-spacing=='margin' {
+        @if $spacing-position {
+            @if $spacing-position=='top' {
+                margin-top: $spacing;
+            }
+            @else if $spacing-position=='right' {
+                margin-right: $spacing;
+            }
+            @else if $spacing-position=='bottom' {
+                margin-bottom: $spacing;
+            }
+            @else if $spacing-position=='left' {
+                margin-left: $spacing;
+            }
+        }
+        @else {
+            margin: $spacing;
+        }
+    }
+    @else if $type-of-spacing=='padding' {
+        @if $spacing-position {
+            @if $spacing-position=='top' {
+                padding-top: $spacing;
+            }
+            @else if $spacing-position=='right' {
+                padding-right: $spacing;
+            }
+            @else if $spacing-position=='bottom' {
+                padding-bottom: $spacing;
+            }
+            @else if $spacing-position=='left' {
+                padding-left: $spacing;
+            }
+        }
+        @else {
+            padding: $spacing;
+        }
+    }
+}
+
+// GRID
+@mixin calc-grid-column($index, $class) {
+    .col-#{$class}-#{$index} {
+        flex-basis: percentage(($index / $grid-columns));
+        max-width: percentage(($index / $grid-columns));
+    }
+}
+
+// [converter] This is defined recursively in LESS, but Sass supports real loops
+@mixin loop-grid-columns($columns, $class) {
+    @for $i from 0 through $columns {
+        @include calc-grid-column($i, $class);
+    }
+}
+
+
+// Create grid for specific class
+@mixin make-grid($class) {
+    @include loop-grid-columns($grid-columns, $class);
 }
 
 // SHADOWS
 @mixin z-depth-1($color: #000) {
-	box-shadow: 0 8px 32px transparentize($color, .9);
+    box-shadow: 0 8px 32px transparentize($color, .9);
 }
 
 @mixin z-depth-2($color: #000) {
-	box-shadow:  0 8px 32px transparentize($color, .9), 0 8px 64px transparentize($color, .9);
+    box-shadow: 0 8px 32px transparentize($color, .9), 0 8px 64px transparentize($color, .9);
 }
 
 @mixin z-depth-3($color: #000) {
-	box-shadow: 0 2px 2px transparentize($color, .9), 0 4px 4px transparentize($color, .9), 0 8px 8px transparentize($color, .9), 0 16px 16px transparentize($color, .9), 0 32px 32px transparentize($color, .9), 0 64px 64px transparentize($color, .9);
+    box-shadow: 0 2px 2px transparentize($color, .9), 0 4px 4px transparentize($color, .9), 0 8px 8px transparentize($color, .9), 0 16px 16px transparentize($color, .9), 0 32px 32px transparentize($color, .9), 0 64px 64px transparentize($color, .9);
 }
 
 @mixin z-depth-4($color: #000) {
-	box-shadow: 0 2px 2px transparentize($color, .8), 0 4px 4px transparentize($color, .8), 0 8px 8px transparentize($color, .85), 0 16px 16px transparentize($color, .85), 0 32px 32px transparentize($color, .9);
+    box-shadow: 0 2px 2px transparentize($color, .8), 0 4px 4px transparentize($color, .8), 0 8px 8px transparentize($color, .85), 0 16px 16px transparentize($color, .85), 0 32px 32px transparentize($color, .9);
 }

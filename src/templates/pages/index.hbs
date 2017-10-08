@@ -18,5 +18,35 @@
     			</div>
     		</div>
     	</div>
+    	<div id="list-of-works">
+    		<div class="flex row">
+	    		{{#each data.works}}
+					<div class="col-xs-12 col-md-4">
+						<div class="card flex">
+							<div class="cover-image">
+								<img src="{{image-url}}" alt="Cover Image">
+							</div>
+							<div class="content">
+								<h3 class="heading">{{title}}</h3>
+								<h6 class="description">{{description}}</h6>
+								<div class="divider"></div>
+								<div class="read-more flex">
+									<div class="likes">
+										<i class="icon-like-o"></i>
+										<span>{{likes}}</span>
+									</div>
+									<div class="link">
+										<a href="/">
+											<h5 class="m-r-1">Read More</h5>
+											<i class="icon-arrow-right"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+	    		{{/each}}
+    		</div>
+    	</div>
     {{/content}}
 {{/extend}}

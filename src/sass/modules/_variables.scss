@@ -45,9 +45,11 @@ $screen-xs-max:              ($screen-sm-min - 1) !default;
 $screen-sm-max:              ($screen-md-min - 1) !default;
 $screen-md-max:              ($screen-lg-min - 1) !default;
 
-// CONTAINER
+// GRID
 $grid-gutter-width: 30px;
+$grid-columns: 12;
 
+// CONTAINER
 $container-sm: 720px + $grid-gutter-width;
 $container-md: 940px + $grid-gutter-width;
 $container-lg: 1140px + $grid-gutter-width;
