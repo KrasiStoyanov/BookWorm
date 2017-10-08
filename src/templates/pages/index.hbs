@@ -3,8 +3,8 @@
     	<div class="p-t-5 p-b-5">
     		<div class="flex flex-row">
     			<div>
-    				<h1 class="heading m-b-2">Layout</h1>
-    				<h6 class="upcase">All texts published by our users</h6>
+    				<h1 class="heading m-b-2">Library</h1>
+    				<h6 class="upcase">All works published by our users</h6>
     			</div>
     			<div class="flex align-items-center flex-grow justify-content-end">
     				<button class="btn btn-md btn-default">
@@ -21,26 +21,30 @@
     	<div id="list-of-works">
     		<div class="flex row">
 	    		{{#each data.works}}
-					<div class="col-xs-12 col-md-4">
+					<div class="col-xs-12 col-md-4 m-b-3">
 						<div class="card flex">
 							<div class="cover-image">
 								<img src="{{image-url}}" alt="Cover Image">
 							</div>
-							<div class="content">
-								<h3 class="heading">{{title}}</h3>
-								<h6 class="description">{{description}}</h6>
+							<div class="content flex flex-column">
+								<div class="p-t-2 p-r-2 p-b-2 p-l-2 flex-grow">
+									<a href="#"><h3 class="heading m-b-2">{{title}}</h3></a>
+									<h6 class="description">{{description}}</h6>
+								</div>
 								<div class="divider"></div>
-								<div class="read-more flex">
-									<div class="likes">
-										<i class="icon-like-o"></i>
-										<span>{{likes}}</span>
-									</div>
-									<div class="link">
-										<a href="/">
-											<h5 class="m-r-1">Read More</h5>
-											<i class="icon-arrow-right"></i>
+								<div class="flex align-items-center p-t-2 p-r-2 p-b-2 p-l-2">
+									<div class="flex-grow">
+										<a href="#" class="like">
+											<h6>
+												<i class="icon-like-o"></i>
+												<span>{{likes}}</span>
+											</h6>
 										</a>
 									</div>
+									<a href="/" class="link flex align-items-center">
+										<h5 class="m-r-1">Read More</h5>
+										<i class="icon-arrow-right"></i>
+									</a>
 								</div>
 							</div>
 						</div>
