@@ -39,7 +39,8 @@
 	.like {
 		color: $extra-dark-snow;
 		display: inline-block;
-
+		
+		&:hover,
 		&:active,
 		&:focus,
 		&.active,

@@ -24,9 +24,11 @@
 		    		{{#each data.works}}
 						<div class="col-xs-12 col-md-4 m-b-3">
 							<div class="card flex">
-								<div class="cover-image">
-									<img src="{{image-url}}" alt="Cover Image">
-								</div>
+								{{#if image-url}}
+									<div class="cover-image">
+										<img src="{{image-url}}" alt="Cover Image">
+									</div>
+								{{/if}}
 								<div class="content flex flex-column">
 									<div class="p-t-2 p-r-2 p-b-2 p-l-2 flex-grow">
 										<a href="{{url}}.html"><h3 class="heading m-b-2">{{title}}</h3></a>
