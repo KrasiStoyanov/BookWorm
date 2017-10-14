@@ -1,7 +1,7 @@
 {{#extend "layout"}}
     {{#content "body"}}
     	<div class="container">
-	    	<div class="p-t-5 p-b-5">
+	    	<section class="p-t-5 p-b-5">
 	    		<div class="flex flex-row">
 	    			<div>
 	    				<h1 class="heading m-b-2">Library</h1>
@@ -18,8 +18,8 @@
 	    				</div>
 	    			</div>
 	    		</div>
-	    	</div>
-	    	<div id="list-of-works">
+	    	</section>
+	    	<section id="list-of-works">
 	    		<div class="flex row">
 		    		{{#each data.works}}
 						<div class="col-xs-12 col-md-4 m-b-3">
@@ -54,7 +54,7 @@
 						</div>
 		    		{{/each}}
 	    		</div>
-    		</div>
+    		</section>
     	</div>
     {{/content}}
 {{/extend}}

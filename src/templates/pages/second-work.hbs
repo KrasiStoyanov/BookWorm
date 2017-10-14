@@ -1,7 +1,7 @@
 {{#extend "layout"}}
     {{#content "body"}}
     	<div class="work">
-	    	<div class="cover-image flex flex-column white-color" style="background-image: url('{{data.works.1.image-url}}');">
+	    	<section class="cover-image flex flex-column white-color" style="background-image: url('{{data.works.1.image-url}}');">
 	    		<div class="overlay"></div>
 	    		<div class="container p-t-5">
 		    		<div class="flex flex-wrap align-items-center">
@@ -34,8 +34,8 @@
 	    				<span>{{data.works.1.likes}}</span>
 	    			</button>
 	    		</div>
-	    	</div>
-	    	<div class="content p-t-6">
+	    	</section>
+	    	<section class="content p-t-6">
 	    		<div class="container">
 		    		<p>
 		    			{{#each data.works.1.text}}
@@ -43,7 +43,7 @@
 		    			{{/each}}
 			    	</p>
 	    		</div>
-	    	</div>
+	    	</section>
     	</div>
     {{/content}}
 {{/extend}}

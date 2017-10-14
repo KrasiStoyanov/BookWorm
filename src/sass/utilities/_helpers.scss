@@ -14,27 +14,8 @@
 	color: $text-color;
 }
 
-.inline-line-text {
-	[class*="icon-"] {
-		margin-right: $s-xs / 2;
-	}
-}
-
 .height-full {
 	height: 100%;
-}
-
-// POSITIONS
-.relative {
-	position: relative;
-}
-
-.absolute {
-	position: absolute;
-}
-
-.z-index-1 {
-	z-index: 1;
 }
 
 .upcase {

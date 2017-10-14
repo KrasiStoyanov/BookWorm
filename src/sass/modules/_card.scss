@@ -5,9 +5,7 @@
 
 	&:hover,
 	&:active,
-	&:focus,
-	&.active,
-	&.focus {
+	&:focus {
 		@include z-depth-2;
 
 		.cover-image {
@@ -42,9 +40,7 @@
 		
 		&:hover,
 		&:active,
-		&:focus,
-		&.active,
-		&.focus {
+		&:focus {
 			i {
 				&::before {
 					content: "\e908";
@@ -70,9 +66,7 @@
 
 		&:hover,
 		&:active,
-		&:focus,
-		&.active,
-		&.focus {
+		&:focus {
 			opacity: .6;
 
 			h5 {

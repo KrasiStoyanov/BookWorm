@@ -11,7 +11,7 @@ body {
 	position: relative;
 }
 
-html, body, p, a, ul, li, div, span, hr, input, textarea, form, button {
+html, body, p, a, ul, li, div, span, hr, input, textarea, button, section, main, nav {
 	margin: 0;
 	padding: 0;
 }
@@ -33,9 +33,7 @@ a {
 	&:hover,
 	&:active,
 	&:focus,
-	&:visited,
-	&.active,
-	&.focus {
+	&:visited {
 		outline: 0;
 		text-decoration: none;
 		color: initial;
@@ -47,9 +45,7 @@ button {
 
 	&:hover,
 	&:active,
-	&:focus,
-	&.active,
-	&.focus {
+	&:focus {
 		outline: 0;
 	}
 }

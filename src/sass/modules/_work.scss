@@ -51,9 +51,7 @@
 
 				&:hover,
 				&:active,
-				&:focus,
-				&.active,
-				&.focus {
+				&:focus {
 					@include z-depth-2;
 
 					i {
